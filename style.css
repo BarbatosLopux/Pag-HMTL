@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(245, 241, 241);
+    background-image: url('../Pag-HMTL/imagenes/image.jpg');
+   
+}
+header{
+    text-align: center;
+    display: flex;
+   
+}
+.titulo{
+    display: block;
+    color: #fff;
+
+}
+    
