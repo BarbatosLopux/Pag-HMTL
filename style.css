@@ -67,10 +67,22 @@ video{
   height: calc(100vh - 100px);
   width: 100%;
 }
+
+.bg-portada{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
 .portada{
+ /*  background-color: black; */
   background-image:url("./imagenes/void.jpg");
-  height: 70vh;
-  
+  height: 30vh; 
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
 }
 p {
   text-decoration: none;
@@ -114,7 +126,7 @@ body {
 }
 
 #fondoInicio {
-  margin: 0;
+  margin: 0%;
   width: 100%;
 }
 
@@ -237,6 +249,8 @@ button {
 }
 
 .section p{
+  line-height: 1.5;
+  padding: 40px;
   color:antiquewhite;
   margin-right:100px;
   margin-left: 50px;
@@ -262,4 +276,14 @@ button {
   color:antiquewhite;
   margin-right:100px;
   margin-left: 50px;
+}
+
+.titulo-historia {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  }
+
+.titulo-personajes{
+  margin-top:100px;
+  margin-bottom: 100px;
 }
