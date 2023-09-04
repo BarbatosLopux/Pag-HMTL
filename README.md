@@ -26,9 +26,9 @@ This purpose revolves around the creation of a website that provides detailed an
 ## What do i use: 
 I used for the development of my web page, HTML 5 for the structure of the page and CSS for the style of it, the page has some BOOSTRAP concepts and also links that direct to other web pages, if you want to know more about me website don't forget to check my code :D
 
-## WireFrame and Principal structure
-Principal structure
+## WireFrame 
+
 
 ![image](https://github.com/BarbatosLopux/Pag-HMTL/assets/139156915/a4001d25-e698-4871-b871-57329ea6c938)
 
-WireFrame
+
