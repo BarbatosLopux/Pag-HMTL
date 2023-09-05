@@ -1,11 +1,9 @@
+@font-face {
+  font-family: 'Trajan';
+  src: url(./font/Trajan.ttf)
+}
 
-
- @font-face{
-          font-family:'Trajan';
-          src:url(./font/Trajan.ttf)
-} 
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -33,7 +31,7 @@ header img {
   height: 5rem;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -59,20 +57,21 @@ nav a:hover {
 
 .titulo-overlay {
   position: absolute;
-  top: 60px; 
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  z-index: 1; 
+  z-index: 1;
   text-align: justify;
 }
-video{
+
+video {
   height: calc(100vh - 100px);
   width: 100%;
   aspect-ratio: 1.7;
 }
 
-.bg-portada{
+.bg-portada {
   background-color: black;
   display: flex;
   align-items: center;
@@ -80,17 +79,20 @@ video{
   height: 40vh;
 }
 
-.portada{
- /*  background-color: black; */
-  background-image:url("./imagenes/void.jpg");
-  height: 30vh; 
+
+.portada {
+  /*  background-color: black; */
+  background-image: url("./imagenes/void.jpg");
+  height: 30vh;
   justify-content: space-between;
   padding: 40px;
   width: 100%;
 }
+
+
 p {
   text-decoration: none;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   font-size: 17px;
   font-family: 'Trajan', sans-serif;
   margin-right: 50px;
@@ -98,34 +100,37 @@ p {
 
 h1 {
   text-decoration: none;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   font-family: 'Trajan', sans-serif;
   margin-right: 50px;
 }
+
 h2 {
   text-decoration: none;
-  color: rgb(255, 255, 255); 
-  
-  font-family: 'Trajan', sans-serif;
-  margin-right: 50px;
-}
-h3 {
-  text-decoration: none;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
 
   font-family: 'Trajan', sans-serif;
   margin-right: 50px;
 }
+
+h3 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+  font-family: 'Trajan', sans-serif;
+  margin-right: 50px;
+}
+
 ul {
   text-decoration: none;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
 
   font-family: 'Trajan', sans-serif;
   margin-right: 50px;
 }
 
 body {
-  background-image: url("./imagenes/Fondo.jpg"); 
+  background-image: url("./imagenes/Fondo.jpg");
   background-attachment: fixed;
   height: 100vh;
   width: 100%;
@@ -137,10 +142,10 @@ body {
   width: 100%;
 }
 
-#fondoInicio video{
+#fondoInicio video {
   width: 100%;
   height: 100%;
-} 
+}
 
 button {
   position: relative;
@@ -154,14 +159,14 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: 'Trajan', sans-serif;
- }
- 
- button.learn-more {
+}
+
+button.learn-more {
   width: 12rem;
   height: auto;
- }
- 
- button.learn-more .circle {
+}
+
+button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -170,26 +175,26 @@ button {
   height: 3rem;
   background: #282936;
   border-radius: 1.625rem;
- }
- 
- button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- }
- 
- button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -199,9 +204,9 @@ button {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
- }
- 
- button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -215,110 +220,116 @@ button {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- }
- 
- button:hover .circle {
+}
+
+button:hover .circle {
   width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
-  color: #fff;
- }
+}
 
- #about {
+button:hover .button-text {
+  color: #fff;
+}
+
+#about {
   background-color: rgb(245, 49, 75);
 }
+
 .section {
-  background-color: rgb(0, 0, 0) ;
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   padding: 40px;
   width: 97%;
-  margin:15px;
+  margin: 15px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(117, 116, 116, 0.5);
 }
+
 .section img {
-  width:300px;
+  width: 300px;
   border-radius: 30px;
   margin-left: -10px;
 }
 
 .section h3 {
   margin: 0;
-  color:aqua;
+  color: aqua;
   margin-left: 50px;
 }
 
-.section p{
+.section p {
   line-height: 1.5;
   padding: 40px;
-  color:antiquewhite;
-  margin-right:100px;
+  color: antiquewhite;
+  margin-right: 100px;
   margin-left: 50px;
 }
 
 .section-character {
- 
+
   display: flex;
   justify-content: space-between;
   padding: 40px;
   width: 97%;
-  margin:15px;
+  margin: 15px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(23, 142, 197, 0.247);
 }
+
 .section-character h2 {
   margin: 0;
-  color:rgb(196, 218, 218);
+  color: rgb(196, 218, 218);
   margin-left: 50px;
 }
 
-.section-character p{
-  color:antiquewhite;
-  margin-right:100px;
+.section-character p {
+  color: antiquewhite;
+  margin-right: 100px;
   margin-left: 50px;
 }
 
 .section-map {
- 
+
   display: flex;
   justify-content: space-between;
   padding: 10px;
   width: 97%;
-  margin:15px;
- 
+  margin: 15px;
+
 }
+
 .section-team {
   display: flex;
 }
-.item{
-  margin-top:40px ;
+
+.item {
+  margin-top: 40px;
   flex: 1;
   text-align: center;
   padding: 10px;
 }
+
 .titulo-historia {
   margin-top: 60px;
   margin-bottom: 60px;
-  }
+}
 
-.titulo-personajes{
-  margin-top:100px;
+.titulo-personajes {
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.texto-con-fondo{
+.texto-con-fondo {
   background-color: black;
   padding: 0.8%;
 }
 
-footer{
+footer {
   width: 100%;
   bottom: 0;
   left: 0;
@@ -330,12 +341,13 @@ footer{
   flex-direction: column;
 }
 
-.logo{
+.logo {
   height: 80px;
   margin-bottom: 1rem;
 }
 
-.social-icons-container, .footer-menu-container{
+.social-icons-container,
+.footer-menu-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,7 +355,7 @@ footer{
   margin-bottom: 1rem;
 }
 
-.social-icon{
+.social-icon {
   height: 50px;
   width: 50px;
   border-radius: 50px;
@@ -352,42 +364,44 @@ footer{
   background-position: center;
   background-size: 40%;
   background-repeat: no-repeat;
-  margin:1rem;
+  margin: 1rem;
 }
 
-.social-icon:hover{
+.social-icon:hover {
   background-color: #121212;
   filter: invert(1);
 }
 
-.social-icon:nth-of-type(2){
+.social-icon:nth-of-type(2) {
   background-image: url(imagenes/instagram.png);
 }
-.social-icon:nth-of-type(3){
+
+.social-icon:nth-of-type(3) {
   background-image: url(imagenes/twitter.png);
 }
-.social-icon:nth-of-type(4){
+
+.social-icon:nth-of-type(4) {
   background-image: url(imagenes/github.png);
 }
 
 
-.footer-menu-container{
+.footer-menu-container {
   list-style-type: none;
   color: #f2f2f2;
   font-size: 18px;
 }
 
-.menu-item{
+.menu-item {
   margin: 1rem 1.5rem;
   cursor: pointer;
   opacity: 0.6;
 }
 
-.menu-item:hover{
+.menu-item:hover {
   opacity: 1;
 }
 
-.copyright{
+.copyright {
   color: #f2f2f2;
   opacity: 0.3;
   text-align: center;
@@ -397,7 +411,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .container img {
@@ -409,6 +423,84 @@ footer{
   justify-content: space-between;
   padding: 40px;
   width: 97%;
-  margin:15px;
+  margin: 15px;
   border-radius: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  section{
+    font-size: 10%;
+  }
+
+  header {
+    width: 100%;
+    height: 10%;
+
+  }
+  header nav{
+    width: 100%;
+   
+  }
+  header nav a{
+    width: 100%;
+    font-size: 45%;
+  }
+
+  .titulo-overlay .imagen{
+      width: 80%;
+      margin: 1;
+  }
+
+  .portada .texto-con-fondo {
+      text-align: start;
+      margin-top: 16%;
+      width: 100%;
+  }
+
+  .titulo-historia{
+   margin-top: 100%;
+   width: 100%;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.parrafo {
+    max-width: 80%; 
+
+}
+
+img {
+    max-width: 100%; 
+        height: auto; 
+}
+.section-character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-team {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.item {
+  margin-bottom: 20px; 
+}
 }
